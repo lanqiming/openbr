@@ -40,18 +40,15 @@ https://github.com/lanqiming/INVSC-janus
 https://download.qt.io/official_releases/online_installers/
 Remember to when you are installing please choose version above 5.14, which can support VS2019.
 
-6.	Chnage the code in "openbr/CMakeList.txt" to your own path where have the “Qt5Config.cmake” file. The code in "CMakeList.txt" is at ##Global settings. The example of this code is below
+6.	Chnage the code in "openbr/CMakeList.txt" to your own path where have the “Qt5Config.cmake” file. The code in "CMakeList.txt" is at #Global settings. The example of this code is below
 
 		set (CMAKE_PREFIX_PATH "F:Qt\\Qt5\\5.15.2\\msvc2019_64\\lib\\cmake\\Qt5\\")
 
 
 7.	Before install openbr, please check the "CMakeList.txt" in the file "openbr/openbr". Please check the code in the 42 line. If it is not  "target_link_libraries(openbr ${BR_THIRDPARTY_LIBS})", please change it to that.
 
-8.	Chnage the code in "openbr/CMakeList.txt" to your own path where have the “Qt5Config.cmake” file. The code in "CMakeList.txt" is at ##Global settings. The example of this code is below
 
-		set (CMAKE_PREFIX_PATH "F:Qt\\Qt5\\5.15.2\\msvc2019_64\\lib\\cmake\\Qt5\\")
-
-9.	Make sure the MSVC2019 and OpenCV 4.x is installed, and we can build the OpenBR now. 
+8.	Make sure the MSVC2019 and OpenCV 4.x is installed, and we can build the OpenBR now. 
 Use the following code in the Command Prompt.(you can also find this script in the "turn-key scripts" file named "install openbr")      
 
     	cd C:\openbr
@@ -61,7 +58,7 @@ Use the following code in the Command Prompt.(you can also find this script in t
     	nmake
     	nmake install
     
-10.	Hack OpenBR
+9.	Hack OpenBR
     1.	Open the “Qt Creator” in the Qt files.
     2.	From the Qt Creator "Tools" menu select "Options..."
     3.	Under "Kits" select "Desktop Qt MSVC2019 64bit"
