@@ -23,11 +23,11 @@ NOTICE: Please install the latest version of CMake and Make sure OpenCV 4.x and 
 
 
 3.	Download all OpenBR source code and switch to the latest release tag. There are two method to do that:
-        (1)(Recommend)	Download from: https://github.com/lanqiming/openbr directly. Choose “Download zip” and decompress it in the disk C  with file named “openbr”.
+        (1)(Recommend)	Download from: https://github.com/lanqiming/openbr/tree/lanqiming-change1 directly. Choose “Download zip” and decompress it in the disk C  with file named “openbr”.
         (2)	Download the “Git Bash” and run the scripts below: 
         
             cd c:/
-            git clone https://github.com/lanqiming/openbr.git
+            git clone https://github.com/lanqiming/openbr/tree/lanqiming-change1.git
             cd openbr
             
  	Then the file name “openbr” can be found in the c disk. If the file cannot be download, please use the first method.
